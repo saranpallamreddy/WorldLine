@@ -1,0 +1,53 @@
+<div class="main-1">
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <form [formGroup] = "userForm">
+        <div class="main-2">
+            <label>First Name:-</label>
+            <input type="text" formControlName="firstname" class="form-control" size="30"><br><br>
+            <div>
+                <span style="color:red;margin-left: 1px;" *ngIf="firstname && firstname.invalid && firstname.touched">First Name is Required</span>
+            </div><br>
+            <label>Last Name:-</label>
+            <input type="text" size="30"><br><br>
+            <label>Email Id:-</label>
+            <input type="email" formControlName="emailid" class="form-control" size="30"><br><br>
+            <div>
+                <span style="color:red;margin-left: 1px;" *ngIf="emailid && emailid.invalid && emailid.touched">Email Id is Required</span>
+            </div><br>
+            <label>Phone Number:-</label>
+            <input type="tel" formControlName="phonenum" class="form-control" size="30"><br><br>
+            <div>
+                <span style="color:red;margin-left: 1px;" *ngIf="phonenum && phonenum.invalid && phonenum.touched">Phone Number is Required</span>
+            </div><br>
+            <label>Date Of Birth:-</label>
+            <input type="date" formControlName="dob" class="form-control" size="30"><br><br>
+            <div>
+                <span style="color:red;margin-left: 1px;" *ngIf="dob && dob.invalid && dob.touched">DOB is Required</span>
+            </div><br>
+            <label>Gender:-</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select><br><br>
+            
+            <label>Address Lane-1:-</label>
+            <textarea formControlName="address" class="form-control"></textarea><br><br>
+            <div>
+                <span style="color:red;margin-left: 1px;" *ngIf="address && address.invalid && address.touched">Address is Required</span>
+            </div><br>
+            <label>Address Lane-2:-</label>
+            <textarea></textarea><br><br>
+            <label>City:-</label>
+            <input type="text" size="30"><br><br>
+            <label>State:-</label>
+            <input type="text" size="30"><br><br>
+            <label>Postal Code:-</label>
+            <input type="number" size="30"><br><br>
+            <label>Country:-</label>
+            <input type="text" size="30"><br><br>
+            <button class="submit" (click)="Onsubmit()">Submit</button>
+        </div>
+    </form>
+</div>
+

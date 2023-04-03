@@ -1,0 +1,37 @@
+.main-1{
+    border:2px solid black;
+    border-radius: 5px;
+    margin-left: 450px;
+    padding: 0px 20px 20px 20px;
+    margin-right: 450px;
+    box-shadow: 15px 15px black;
+}
+label{
+    font-size: large;
+    
+}
+h1{
+    margin-left: 25px;
+}
+input{
+    border: 2px solid black;
+    border-radius:5px;
+    padding: 3px;   
+}
+textarea{
+    border: 2px solid black;
+    border-radius:5px;
+    padding: 3px; 
+}
+select{
+    border: 2px solid black;
+    border-radius:5px;
+    padding: 3px; 
+}
+button{
+    margin-left: 250px;
+    border: 2px solid black;
+    border-radius:5px;
+    padding: 3px;
+    font-size: large;
+}
